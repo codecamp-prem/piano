@@ -1,14 +1,4 @@
 .key {
-  --radius: 2px;
-  --font-size: 0.6rem;
-  --white-key-width: 20px;
-  --white-key-height: calc(var(--white-key-width) * 4.57);
-  --white-key-padding: calc(var(--white-key-height) * 1.28);
-  --black-key-width: calc(var(--white-key-width) * 1.6);
-  --black-key-height: calc(var(--white-key-height) * 1.77);
-  --black-key-padding: calc(var(--black-key-height) * 1.5);
-}
-.key {
   position: relative;
   font-size: var(--font-size);
   border-radius: 0 0 var(--radius) var(--radius);
@@ -63,6 +53,17 @@
 .flat:disabled {
   color: rgba(255, 255, 255, 0.4);
   background-color: #111;
+}
+
+.key {
+  --radius: 2px;
+  --font-size: 0.6rem;
+  --white-key-width: 20px;
+  --white-key-height: calc(var(--white-key-width) * 4.57);
+  --white-key-padding: calc(var(--white-key-height) / 1.28);
+  --black-key-width: calc(var(--white-key-width) / 1.6);
+  --black-key-height: calc(var(--white-key-height) / 1.77);
+  --black-key-padding: calc(var(--black-key-height) / 1.5);
 }
 
 @media (min-width: 380px) {

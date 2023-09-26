@@ -8,8 +8,9 @@ function App() {
     <>
       <div className="app">
         <Logo />
-        {/* <Main className="content" /> */}
-        <Main />
+        <main className="content">
+          <Main />
+        </main>
         <Footer />
       </div>
     </>
